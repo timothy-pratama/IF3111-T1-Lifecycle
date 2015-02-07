@@ -3,6 +3,8 @@ package com.tutorial.timothypratama.lifecycle;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class MainActivity extends ActivityTracer {
 
@@ -12,7 +14,7 @@ public class MainActivity extends ActivityTracer {
         setContentView(R.layout.activity_main);
     }
 
-    public void onClick(View view) {
+    public void nextPage(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
     }
